@@ -6231,6 +6231,10 @@ label,
 .checkbox label {
   font-weight: 300;
 }
+body {
+  background: #000000;
+  color: #FFFFFF;
+}
 .padding {
   padding: 25px 0;
 }
