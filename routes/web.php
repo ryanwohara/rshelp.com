@@ -20,5 +20,9 @@ Route::get('/', function () {
 });
 
 Route::get('/t/{hash}', function ($hash) {
-    return Redirect::to(News::where('hash_id', $hash)->firstOrFail()->url);
+    return Redirect::to(
+        News::where('hash_id', $hash)
+            ->firstOrFail()
+            ->url
+    );
 });
